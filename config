@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "a-bee-sees"]
+	url = https://github.com/gabrielvega07/a-bee-sees.git
+	fetch = +refs/heads/*:refs/remotes/a-bee-sees/*
+[remote "origin"]
+	url = https://github.com/gabrielvega07/a-bee-sees.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
