@@ -1,0 +1,61 @@
+/* styles/Navbar.module.css */
+
+.navbar {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  .container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre enlaces y barra de búsqueda */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .navLinks {
+    list-style-type: none; /* Sin viñetas */
+    display: flex; /* Mostrar enlaces en línea */
+  }
+  
+  .navLinks li {
+    margin-right: 20px; /* Espacio entre enlaces */
+  }
+  
+  .navLinks a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+  }
+  
+  .searchContainer {
+    position: relative; /* Para posicionar la lista de autocompletar */
+    grid-row: 1;
+    grid-column: 2;
+  }
+  
+  .searchInput {
+    padding: 8px; /* Espaciado interno */
+    color: #333;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 18px; /* Bordes redondeados */
+  }
+  
+  .autocompleteList {
+    position: absolute; /* Posicionar debajo del campo de búsqueda */
+    background-color: white; /* Fondo blanco para la lista */
+    border: 1px solid #ddd; /* Borde gris claro */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    color: black;
+  }
+  
+  .autocompleteList li {
+    padding: 8px; /* Espaciado interno para los elementos de la lista */
+    cursor: pointer; /* Cambiar cursor al pasar sobre los elementos */
+  }
+  
+  .autocompleteList li:hover {
+    background-color: #ffffff; /* Fondo gris claro al pasar el ratón sobre los elementos */
+  }

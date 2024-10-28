@@ -1,0 +1,22 @@
+/* styles/consultas.module.css */
+.container {
+    padding: 20px;
+  }
+  
+  .previewContainer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .fileItem {
+    margin-bottom: 10px; /* Space between items */
+  }
+  
+  .fileItem h2 {
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .fileItem a {
+    color: blue; /* Link color */
+    text-decoration: underline; /* Underline links */
+  }

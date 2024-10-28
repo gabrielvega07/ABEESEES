@@ -1,0 +1,45 @@
+/* styles/Login.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-image: url('../images/FondoLogIn.png'); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Cubrir toda la pantalla */
+}
+
+.loginForm {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+}
+
+.loginForm h2 {
+  margin-bottom: 20px;
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.loginForm button {
+   width: calc(100% - 10px); /* Ancho completo menos margen */
+   padding: 10px;
+   background-color: #007bff; /* Color del botón */
+   color: white; /* Color del texto */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+}
+
+.loginForm button:hover {
+   background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+.error {
+   color: red; /* Color rojo para mensajes de error */
+   margin-top:10px; /* Espacio encima del mensaje de error */
+}

@@ -1,0 +1,61 @@
+/* styles/Home.module.css */
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre texto e imagen */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: url('../images/abeeseeshome.png'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .textContainer {
+    flex: 1; /* Ocupa el espacio disponible */
+    text-align: left; /* Alinear texto a la izquierda */
+    max-width: 50%; /* Limitar el ancho máximo del contenedor de texto */
+  }
+  
+  .greeting {
+    font-size: 2.5rem; /* Tamaño del nuevo encabezado */
+    margin-bottom: 10px; /* Espacio debajo del nuevo encabezado */
+    color: black; /* Cambia el color si es necesario */
+  }
+  
+  .title {
+    font-size: 3rem; /* Tamaño del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    color: black; /* Cambia el color del título si es necesario */
+  }
+  
+  .description {
+    font-size: 1.5rem; /* Tamaño del párrafo */
+    color: black; /* Cambia el color de la descripción si es necesario */
+  }
+  
+  .imageContainer {
+    flex: 1; /* Ocupa el espacio disponible */
+  }
+  
+  .image {
+    max-width: 100%; /* Asegurarse de que la imagen no exceda su contenedor */
+    height: auto; /* Mantener proporciones de la imagen */
+  }
+  
+  /* Estilos para el botón Generar */
+  .generateButton {
+    background-color: orange; /* Color de fondo naranja */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1.2rem; /* Tamaño del texto del botón */
+    text-decoration: underline; /* Subrayar el texto del botón */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  }
+  
+  .generateButton:hover {
+    background-color: darkorange; /* Color más oscuro al pasar el ratón sobre el botón */
+  }

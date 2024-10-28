@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0; /* Eliminar márgenes predeterminados */
+  padding: 0; /* Eliminar relleno predeterminado */
+  background-image: url('../images/backgroudn.png'); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-position: full; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

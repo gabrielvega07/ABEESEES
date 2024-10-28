@@ -1,0 +1,78 @@
+/* ChatGPT.module.css */
+
+.container {
+  max-width: 600px; /* Limit the width of the chat container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Darker text color for headings */
+}
+
+.messageContainer {
+  max-height: 400px; /* Limit height of message area */
+  overflow-y: auto; /* Enable scrolling if messages exceed height */
+  margin-bottom: 20px; /* Space below message area */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border around messages */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* White background for messages */
+}
+
+.user {
+  text-align: right; /* Align user messages to the right */
+}
+
+.assistant {
+  text-align: left; /* Align assistant messages to the left */
+}
+
+.message {
+  margin-bottom: 10px; /* Space between messages */
+}
+
+.message strong {
+  display: block; /* Display role as a block element */
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputField {
+  flex-grow: 1; /* Allow input to take available space */
+  padding: 10px;
+  border: 1px solid #ccc; /* Border around input */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.inputField:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.button {
+  padding: 10px;
+  margin-left: 10px; /* Space between input and button */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color for button */
+  border: none; /* No border for button */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.responseTextArea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    height: auto;
+    background-color: #f1f1f1; /* Light gray background for read-only textarea */
+    border: none; /* No border for read-only textarea */
+    resize: none; /* Disable resizing of the textarea */
+}
